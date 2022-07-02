@@ -1,5 +1,5 @@
 
-FROM ruby:3.0
+FROM denvazh/ruby
 RUN apk add --update build-base curl
 RUN gem install sinatra -n /usr/local/bundle
 RUN gem install thin -n /usr/local/bundle
